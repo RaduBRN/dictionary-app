@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Lora";
+    font-display: swap;
+    src: url(/fonts/lora/Lora-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-display: swap;
+    src: url(/fonts/inter/Inter-VariableFont_slnt,wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Inconsolata";
+    font-display: swap;
+    src: url(/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf)
+      format("truetype");
+  }
+}
+
+@layer components {
+  .font-lora {
+    font-family: "Lora";
+  }
+  .font-inter {
+    font-family: "Inter";
+  }
+  .font-inconsolata {
+    font-family: "Inconsolata";
+  }
+  .primary-text {
+    @apply text-[#2d2d2d] dark:text-[#fff];
+  }
+  .secondary-text {
+    @apply text-[#757575] dark:text-[#ccc];
+  }
+}
