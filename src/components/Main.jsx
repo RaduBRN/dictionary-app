@@ -2,6 +2,7 @@ import { useData } from "../../hooks/data-hook.js";
 import Input from "./Input";
 import Content from "./Content";
 import emoji from "../../assets/icons/emoji.png";
+import icon from "../../assets/icons/externalLink.png";
 
 function Main() {
   const { isError, data: apiData, isPending, mutate, reset } = useData();
@@ -35,10 +36,7 @@ function Main() {
                 <p className="dark:text-[#fff] truncate">
                   {apiData?.sourceUrls}
                 </p>
-                <img
-                  src="../assets/icons/externalLink.png"
-                  className="w-3 h-3"
-                />
+                <img src={icon} className="w-3 h-3" />
               </a>
             </div>
           </div>

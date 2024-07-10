@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { selectedFontAtom } from "../../atoms/selectedFont";
 import { useDetectClickOutside } from "react-detect-click-outside";
+import icon from "../../assets/icons/fontSelect.png";
 
 const menu = [
   {
@@ -40,7 +41,7 @@ function FontSelector() {
         </div>
         <div>
           <img
-            src="../assets/icons/fontSelect.png"
+            src={icon}
             className={`w-3 h-[6px] ${showFontSelector && "rotate-180"}`}
           />
         </div>

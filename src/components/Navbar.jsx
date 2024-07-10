@@ -2,6 +2,7 @@ import { useRecoilState } from "recoil";
 import { themeStateAtom } from "../../atoms/themeState";
 import IconMoon from "../icons/IconMoon";
 import FontSelector from "./FontSelector";
+import logo from "../../assets/images/logo.svg";
 
 function Navbar() {
   const [themeState, setThemeState] = useRecoilState(themeStateAtom);
@@ -13,10 +14,7 @@ function Navbar() {
   return (
     <div className="flex justify-between gap-4">
       <a href="/">
-        <img
-          src="../assets/images/logo.svg"
-          className="md:w-8 md:h-9 w-7 h-8"
-        />
+        <img src={logo} className="md:w-8 md:h-9 w-7 h-8" />
       </a>
       <div className="flex items-center gap-6">
         <FontSelector />
